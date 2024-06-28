@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    
+    
+    <style>
+        /* GENERAL */
+
+
+
+* {
+  margin: 0 ;
+  padding: 0 ;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: aqua;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+/* SECTIONS */
+
+section {
+  padding-top: 20vh;
+  height: 100vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section_text_p1 {
+  text-align: center;
+}
+
+.section_text_p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+} 
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS  */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* skills  SECTION */
+
+#skills{
+  position: relative ;
+}
+
+.skills-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 700;
+  font-size: 1.75rem ;
+  margin-bottom: 2rem;
+  
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#project{
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.about-pic{
+  border-radius: 1rem;
+  
+  
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-title-container {
+  justify-content: left;
+  flex-direction: column;
+}
+
+.project-container,
+.project-title-container {
+  display: flex;
+}
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#resume{
+    position: relative;
+    
+}
+.resume-title {
+  margin: 1rem;
+  color: black;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+
+
+
+ /*CONTACT*/ 
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+FOOTER SECTION 
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;} 
+
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section >
+      
+      <div class="section__text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Madhumitha P</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+            <h3>High school</h3>
+              <p>12th grade <br />85 percent</p>
+            </div>
+            <div class="details-container">
+              <h3>college</h3>
+              <p>B.Tech.IT</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                With a solid foundation in engineering and a knack for effective communicationI bring a unique blend of technical expertise and interpersonal skills to any project. 
+                Currently expanding my skill set by delving into frontend development,
+                 I am committed to delivering high-quality solutions that meet both technical requirements and user expectations.
+                 My dedication to continuous learning and adaptability allows me to thrive in dynamic environments,
+                where innovation and collaboration are paramount.
+             </p>
+          </div>
+        </div>
+      </div>
+      </section>
+    <section id="skills">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            
+              <article>
+              <div>
+                  <h3>HTML</h3>
+                  </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CSS</h3>
+                   </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JAVASCRIPT</h3>
+                </div>
+              </article>
+              <article>
+               <div>
+                  <h3>REACTJS</h3>
+                </div>
+              </article>
+              </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+              <article>
+              <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+                 <div>
+                  <h3>PYTHON</h3>
+                  <p>Intermediate</p>
+                </div>
+              
+              <article>
+               <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              </div>
+              </div>
+              </div>
+              
+              
+    <section>
+    <section id="project">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Project</h1>
+      <div class="project-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <img
+                src="./project.jpg"
+                alt="Project 1"
+                width="500"
+                height="300"
+                class="about-img"
+              />
+            
+            <div class=" project-title-container">Ecommerce Website
+               <h1>Description</h1><p>This website is based on  Buy and sale method and this is very usefull for people who  buy the 
+                products in our website along with cheap cost and sale the same products as maximum cost.
+               </p>
+               </div></div>
+    </div>
+        </div>
+          </div>
+           </div>
+           
+          
+          
+       </section> 
+       
+       <div id ="resume">
+        <h1 class="title">Resume</h1>
+        <div class="btn-container">
+        <button
+       class="btn btn-color-2"
+       onclick="window.open('./Resume.pdf')"
+     >
+       Download CV
+     </button>
+     </div>
+    </div>
+     <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <p><a href="mailto:p.madhumitha743@gmail.com">p.madhumitha743@gmail.com</a></p>
+          <p>contact number:8940478857</p>
+        </div>
+        
+        <div class="contact-info-container">
+           <p><a href="https://www.linkedin.com/in/madhu-mitha-823025240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Madhumitha. All Rights Reserved.</p>
+    </footer>
+    </body>
+</html>
